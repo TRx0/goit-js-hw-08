@@ -28,5 +28,8 @@ function onFormSubmit(evt) {
 function saveForm(evt) {
     const savedTextValue = localStorage.getItem(STORAGE_KEY);
     const parseMessage = JSON.parse(savedTextValue);
-
+    if (parseMessage) {
+        console.log(input.value = parseMessage.email);
+        console.log(textarea.value = parseMessage.message);
+    }
 }
